@@ -22,6 +22,7 @@ print("Insertion complete.")
 ### Using Redis Module FT.SEARCH
 
 Redis search docker image runs on port 6377
+
 10 Million Keys
 
 ```python
