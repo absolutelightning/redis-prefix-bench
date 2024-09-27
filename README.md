@@ -1,8 +1,9 @@
-## Benchmarks Redis keys prefix search performances
+# Benchmarks Redis keys prefix search performances
+
+## Setup
 
 ### Using Scan Command
 
-#### Setup
 10 Million Keys
 ```python
 import redis
@@ -19,9 +20,9 @@ print("Insertion complete.")
 ```
 
 ### Using Redis Module FT.SEARCH
-#### Setup
 
 Redis search docker image runs on port 6377
+10 Million Keys
 
 ```python
 import redis
