@@ -89,7 +89,7 @@ func ftsearch(i int) *time.Duration {
 		q = redisearch.NewQuery("User*")
 	}
 	q = q.SetSortBy("name", true)
-	q = q.Limit(0, 1000000)
+	q = q.Limit(0, 1000)
 	res, _, _ := client.Search(q)
 	for _, doc := range res {
 		fmt.Printf("Document ID: %s, Name: %s\n", doc.Id, doc.Properties["name"])
